@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.9375rem;
+}
+
+:root {
+  /*Primary*/
+
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+.attribution {
+  position: absolute;
+  bottom: 5px;
+}
+.wrapper,
+main {
+  max-width: 70rem;
+  width: 100%;
+}
+header {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+h1 {
+  font-size: 3rem;
+  color: var(--Very-Dark-Magenta);
+  max-width: 20rem;
+  width: 100%;
+  font-weight: 700;
+  line-height: 0.9em;
+}
+.head-des {
+  font-size: 1.2rem;
+  max-width: 29rem;
+  margin-top: 1rem;
+  color: var(--Dark-Grayish-Magenta);
+  width: 100%;
+}
+.head-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.star-box {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--Very-Dark-Magenta);
+  margin-bottom: 1.3rem;
+}
+.rated {
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.second {
+  margin-left: 3.5rem;
+}
+.third {
+  margin-left: 7rem;
+}
+.bottom-wrap {
+  display: flex;
+  gap: 2rem;
+}
+.profile-box {
+  background-color: var(--Very-Dark-Magenta);
+  color: var(--White);
+  padding: 2rem;
+  border-radius: 10px;
+  height: 14rem;
+}
+img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.box-top {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+.name {
+  font-size: 1.06rem;
+  font-weight: 500;
+}
+.ver {
+  color: var(--Soft-Pink);
+  font-size: 1.06rem;
+  font-weight: 500;
+}
+.profile-des {
+  font-size: 1.06rem;
+  line-height: 1.4rem;
+}
+.second-box {
+  margin-top: 1rem;
+}
+.third-box {
+  margin-top: 2rem;
+}
+@media (max-width: 1100px) {
+  .bottom-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-box {
+    max-width: 25rem;
+    width: 100%;
+  }
+}
+@media (max-width: 975px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .head-left {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    margin: 1rem 1rem 3rem 1rem;
+  }
+  .second,
+  .third {
+    margin-left: 0;
+  }
+  .star-box {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  .bottom-wrap {
+    gap: 1rem;
+  }
+  .second-box,
+  .third-box {
+    margin-top: 0;
+  }
+  .head-des {
+    font-size: 1.06rem;
+  }
+}
